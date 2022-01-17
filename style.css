@@ -1,0 +1,189 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+/* GAME */
+.game{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 400px;
+    height: calc(100vh - 10%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    height: 10%;
+}
+
+.panel{
+    width: 100%;
+    height: 65%;
+}
+
+.row{
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.letter{
+    width: 15%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px rgba(255, 255, 255, 0.3);
+    border-radius: 10px ;
+    color: white;
+    font-size: 35px;
+}
+
+.keyboard{
+    width: 100%;
+    height: 25%;
+}
+
+.keyboard-row{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.kr1{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+
+.kr2{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+
+.kr3{
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-letter{
+    height: 100%;
+    width: 30px;
+    margin-right: 7px;
+}
+
+.button-back{
+    height: 100%;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.button-enter{
+    height: 100%;
+    width: 90px;
+    margin-left: 20px;
+}
+
+/* GAME OVER SCREEN */
+
+.game-over{
+    color: white;
+    background: rgba(34, 34, 34, 0.8);
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#final-frase{
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#correct-word{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.restart-btn{
+    padding: 10px;
+    font-size: 20px
+}
+
+@media (max-width: 480px) {
+
+    #final-frase{
+        font-size: 10vw;
+    }
+
+    .button-letter, .button-enter, .button-back{
+        font-size: 3vw;
+    }
+
+    .game{
+        width: calc(100vw - 20%);
+    }
+    
+    .keyboard-row{
+        height: 30%;
+    }
+
+    .button-letter{
+        width: calc(7%);
+        height: 100%;
+        margin-right: 7px;
+    }
+
+    .button-back{
+        width: calc(8%);
+        height: 100%;
+        margin-left: 20px;
+    }
+    
+    .button-enter{
+
+        width: 24%;
+        height: 100%;
+        margin-left: 20px;
+    }
+}

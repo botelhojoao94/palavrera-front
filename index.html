@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Game -->
+    <div class="game">
+        <h1>Palavrera</h1>
+
+        <!-- Panel Game -->
+        <div class="panel">
+            <div class="row row1">
+                <div class="letter" id="letter00"></div>
+                <div class="letter" id="letter01"></div>
+                <div class="letter" id="letter02"></div>
+                <div class="letter" id="letter03"></div>
+                <div class="letter" id="letter04"></div>
+            </div>
+            <div class="row row2">
+                <div class="letter" id="letter10"></div>
+                <div class="letter" id="letter11"></div>
+                <div class="letter" id="letter12"></div>
+                <div class="letter" id="letter13"></div>
+                <div class="letter" id="letter14"></div>
+            </div>
+            <div class="row row3">
+                <div class="letter" id="letter20"></div>
+                <div class="letter" id="letter21"></div>
+                <div class="letter" id="letter22"></div>
+                <div class="letter" id="letter23"></div>
+                <div class="letter" id="letter24"></div>
+            </div>
+            <div class="row row4">
+                <div class="letter" id="letter30"></div>
+                <div class="letter" id="letter31"></div>
+                <div class="letter" id="letter32"></div>
+                <div class="letter" id="letter33"></div>
+                <div class="letter" id="letter34"></div>
+            </div>
+            <div class="row row5">
+                <div class="letter" id="letter40"></div>
+                <div class="letter" id="letter41"></div>
+                <div class="letter" id="letter42"></div>
+                <div class="letter" id="letter43"></div>
+                <div class="letter" id="letter44"></div>
+            </div>
+            <div class="row row6">
+                <div class="letter" id="letter50"></div>
+                <div class="letter" id="letter51"></div>
+                <div class="letter" id="letter52"></div>
+                <div class="letter" id="letter53"></div>
+                <div class="letter" id="letter54"></div>
+            </div>
+        </div>
+
+        <!-- Keyboard -->
+        <div class="keyboard">
+            <div class="keyboard-row kr1">
+                <button class="button-letter" id="q">Q</button>
+                <button class="button-letter" id="w">W</button>
+                <button class="button-letter" id="e">E</button>
+                <button class="button-letter" id="r">R</button>
+                <button class="button-letter" id="t">T</button>
+                <button class="button-letter" id="y">Y</button>
+                <button class="button-letter" id="u">U</button>
+                <button class="button-letter" id="i">I</button>
+                <button class="button-letter" id="o">O</button>
+                <button class="button-letter" id="p">P</button>
+            </div>
+            <div class="keyboard-row kr2">
+                <button class="button-letter" id="a">A</button>
+                <button class="button-letter" id="s">S</button>
+                <button class="button-letter" id="d">D</button>
+                <button class="button-letter" id="f">F</button>
+                <button class="button-letter" id="g">G</button>
+                <button class="button-letter" id="h">H</button>
+                <button class="button-letter" id="j">J</button>
+                <button class="button-letter" id="k">K</button>
+                <button class="button-letter" id="l">L</button>
+                <button class="button-back" id="back">⌫</button>
+            </div>
+            <div class="keyboard-row kr3">
+                <button class="button-letter" id="z">Z</button>
+                <button class="button-letter" id="x">X</button>
+                <button class="button-letter" id="c">C</button>
+                <button class="button-letter" id="v">V</button>
+                <button class="button-letter" id="b">B</button>
+                <button class="button-letter" id="n">N</button>
+                <button class="button-letter" id="m">M</button>
+                <button class="button-enter" id="enter">ENTER</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="game-over">
+        <div id="final-frase"></div>
+        <div id="correct-word"></div>
+        <button class="restart-btn">Reiniciar</button>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>

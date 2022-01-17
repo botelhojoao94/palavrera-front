@@ -1,0 +1,1 @@
+export const words = ['amigo', 'joana', 'pedra', 'pedro']
