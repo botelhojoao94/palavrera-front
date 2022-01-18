@@ -50,8 +50,8 @@ h1{
 }
 
 .letter{
-    width: 15%;
-    height: 7vh;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
