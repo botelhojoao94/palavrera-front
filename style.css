@@ -125,7 +125,6 @@ button:hover {
 }
 
 /* GAME OVER SCREEN */
-
 .game-over {
     color: white;
     background: rgba(34, 34, 34, 0.8);
@@ -155,32 +154,31 @@ button:hover {
 
 @media (max-width: 480px) {
 
-    #final-frase{
+    #final-frase {
         font-size: 10vw;
     }
     
-    .button-letter, .button-enter, .button-back{
+    .button-letter, .button-enter, .button-back {
         font-size: 3vw;
     }
 
-    .game{
+    .game {
         width: 80vw;
     }
 
-    .button-letter{
+    .button-letter {
         width: calc(7%);
         height: 100%;
         margin-right: 7px;
     }
 
-    .button-back{
+    .button-back {
         width: calc(8%);
         height: 100%;
         margin-left: 20px;
     }
     
-    .button-enter{
-
+    .button-enter {
         width: 24%;
         height: 100%;
         margin-left: 20px;
@@ -194,5 +192,4 @@ button:hover {
         width: 12vw ;
         font-size: 9vw;
     }
-
 }
