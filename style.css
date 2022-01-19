@@ -19,29 +19,30 @@ body {
 }
 
 /* GAME */
-.game{
+.game {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     width: 400px;
-    height: calc(100vh - 10%);
+    height: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
     margin: 0;
     height: 10%;
 }
 
-.panel{
+.panel {
+    margin-top: 10px;
     width: 100%;
     height: 65%;
 }
 
-.row{
+.row {
     width: 100%;
     margin-bottom: 5px;
     display: flex;
@@ -49,7 +50,7 @@ h1{
     justify-content: space-around;
 }
 
-.letter{
+.letter {
     width: 50px;
     height: 50px;
     display: flex;
@@ -61,61 +62,63 @@ h1{
     font-size: 35px;
 }
 
-.keyboard{
+.keyboard {
+    margin-top: 10px;
     width: 100%;
-    height: 25%;
+    height: auto;
 }
 
-.keyboard-row{
+.keyboard-row {
     display: flex;
     flex-direction: row;
-    height: 30%;
+    height: auto;
 }
 
-.kr1{
+.kr1 {
     display: flex;
     justify-content: start;
     margin-bottom: 5px;
 }
 
-.kr2{
+.kr2 {
     display: flex;
     justify-content: end;
     margin-bottom: 5px;
 }
 
-.kr3{
+.kr3 {
     display: flex;
     justify-content: end;
 }
 
-button{
+button {
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
     border: 0px;
     border-radius: 5px;
+    padding: 10px 5px 10px 5px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
     color: white
 }
 
-button:hover{
+button:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.button-letter{
+.button-letter {
     height: 100%;
     width: 30px;
     margin-right: 7px;
 }
 
-.button-back{
+.button-back {
     height: 100%;
     width: 30px;
     margin-left: 20px;
 }
 
-.button-enter{
+.button-enter {
     height: 100%;
     width: 90px;
     margin-left: 20px;
@@ -123,7 +126,7 @@ button:hover{
 
 /* GAME OVER SCREEN */
 
-.game-over{
+.game-over {
     color: white;
     background: rgba(34, 34, 34, 0.8);
     display: none;
@@ -134,18 +137,18 @@ button:hover{
     align-items: center;
 }
 
-#final-frase{
+#final-frase {
     font-size: 50px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#correct-word{
+#correct-word {
     font-size: 30px;
     margin-bottom: 50px;
 }
 
-.restart-btn{
+.restart-btn {
     padding: 10px;
     font-size: 20px
 }
@@ -155,17 +158,13 @@ button:hover{
     #final-frase{
         font-size: 10vw;
     }
-
+    
     .button-letter, .button-enter, .button-back{
         font-size: 3vw;
     }
 
     .game{
-        width: calc(100vw - 20%);
-    }
-    
-    .keyboard-row{
-        height: 30%;
+        width: 80vw;
     }
 
     .button-letter{
@@ -186,4 +185,14 @@ button:hover{
         height: 100%;
         margin-left: 20px;
     }
+}
+
+
+@media (max-width: 400px) {
+    .letter {
+        height: 12vw ;
+        width: 12vw ;
+        font-size: 9vw;
+    }
+
 }
